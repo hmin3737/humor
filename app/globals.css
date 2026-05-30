@@ -1,0 +1,201 @@
+:root {
+  --blue: #2563eb;
+  --bg: #f7f8fb;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --text: #1f2937;
+  --muted: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+    'Pretendard', 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+}
+
+header.hero {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+header.hero h1 {
+  font-size: 2rem;
+  margin: 0 0 6px;
+  letter-spacing: -0.5px;
+}
+
+header.hero p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.blue {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.form-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.field label {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  font-size: 1rem;
+  background: #fff;
+  color: var(--text);
+}
+
+input[type='text']:focus {
+  outline: none;
+  border-color: var(--blue);
+}
+
+.fixed-do {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);
+  flex: 0 0 auto;
+  padding: 0 2px;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.preview {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 8px 0 2px;
+  min-height: 1.6em;
+}
+
+.preview .ph {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 0.85rem;
+}
+
+.section-title {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 28px 0 12px;
+  font-weight: 600;
+}
+
+.humor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.humor .text {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.humor .author {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.like-btn {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 8px 14px;
+  min-width: 56px;
+  transition: transform 0.08s ease, border-color 0.15s ease;
+}
+
+.like-btn:hover {
+  border-color: var(--blue);
+}
+
+.like-btn:active {
+  transform: scale(0.94);
+}
+
+.like-btn .heart {
+  font-size: 1.1rem;
+}
+
+.like-btn .count {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.empty {
+  text-align: center;
+  color: var(--muted);
+  padding: 40px 0;
+}
